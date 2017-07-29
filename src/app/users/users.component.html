@@ -1,0 +1,21 @@
+
+<h1> Users </h1>
+<a routerLink="posts" >Posts</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let user of users" >
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td class="text-center text-primary"><span class="glyphicon glyphicon-edit" (click)="openCustom()"></span></td>
+                <td class="text-center text-danger"><span class="glyphicon glyphicon-trash" (click)="onDelete()"></span></td>
+            </tr>
+    </tbody>
+</table>
