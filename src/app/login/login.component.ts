@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit{
         //             this.loading = false;
         //         });
         if(this.model.username=='shahbaz' && this.model.password=='123'){
-            this.router.navigate(['/home']);
+            this.router.navigate(['home/tweets']);
         }
         else{
             this.loginFailed=true;
