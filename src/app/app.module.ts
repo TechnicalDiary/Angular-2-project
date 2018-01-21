@@ -11,7 +11,7 @@ import {PostsModule} from './posts/posts.module';
 import {TweetsModule} from './tweets/tweets.module';
 import {UsersModule} from './users/users.module';
 import {LoginModule} from './login/login.module';
-import {FleetCommon} from './fleet-common/fleet-common.module';
+import {CommonModule} from './common/common.module';
 
 // importing routing...
 import {routing} from './app.routing';
@@ -23,7 +23,7 @@ import {routing} from './app.routing';
     AppComponent
       ],
   imports: [
-    BrowserModule,LoginModule,HomeModule,PostsModule,UsersModule,TweetsModule,FleetCommon,routing
+    BrowserModule,LoginModule,HomeModule,PostsModule,UsersModule,TweetsModule,CommonModule,routing
   ],
   providers: [],
   exports:[],

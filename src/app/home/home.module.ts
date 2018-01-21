@@ -1,7 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import {HomeComponent} from './home.component';
-import {FleetCommon} from '../fleet-common/fleet-common.module';
+import {CommonModule} from '../common/common.module';
 
 
 import {routing} from '../app.routing';
@@ -11,7 +11,7 @@ import {routing} from '../app.routing';
       HomeComponent
   ],
   imports: [
-    FleetCommon,routing
+    CommonModule,routing
   ],
   providers: [],
   exports:   [HomeComponent],

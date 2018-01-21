@@ -3,7 +3,7 @@ import {Router, RouterModule} from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { NotFoundComponent } from './fleet-common/not-found.component';
+import { NotFoundComponent } from './common/not-found.component';
 import { PostsComponent }   from './posts/posts.component';
 import { TweetsComponent }  from './tweets/tweets.component';
 import { UsersComponent } from './users/users.component';
@@ -20,7 +20,7 @@ export const routing = RouterModule.forRoot([
         children: [
             {
                 path: '',
-                redirectTo:'users',
+                redirectTo:'tweets',
                 pathMatch:'full'
             },
             {

@@ -1,6 +1,6 @@
 
 import {Component} from '@angular/core';
-import {NavbarComponent} from '../fleet-common/navbar.component';
+import {NavbarComponent} from '../common/navbar.component';
 
 @Component({
     selector:'home',

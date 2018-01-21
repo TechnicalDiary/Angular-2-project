@@ -18,4 +18,4 @@ import {AlertComponent, NotFoundComponent, NavbarComponent, SummaryPipe, AlertSe
   providers: [AlertService],
   exports:[NavbarComponent,NotFoundComponent,SummaryPipe,AlertComponent]
 })
-export class FleetCommon { }
+export class CommonModule { }
